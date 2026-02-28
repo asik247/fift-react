@@ -1,4 +1,5 @@
 import React, { use } from 'react';
+import Bottol from '../Bottol/Bottol';
 
 const Bottols = ({bottolsPromise}) => {
     const bottosDatas = use(bottolsPromise)
@@ -6,7 +7,7 @@ const Bottols = ({bottolsPromise}) => {
     return (
         <div>
             {
-                bottosDatas.map(bottol=>console.log(bottol))
+                bottosDatas.map(bottol=><Bottol bottol={bottol}></Bottol>)
             }
         </div>
     );
