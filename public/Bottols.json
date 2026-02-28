@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "brand": "AquaPure",
+    "type": "Water Bottle",
+    "material": "Plastic",
+    "capacity_ml": 500,
+    "color": "Blue",
+    "price_usd": 1.25,
+    "img_url": "https://example.com/images/aquapure-500ml.jpg",
+    "in_stock": true
+  },
+  {
+    "id": 2,
+    "brand": "HydroMax",
+    "type": "Water Bottle",
+    "material": "Stainless Steel",
+    "capacity_ml": 750,
+    "color": "Silver",
+    "price_usd": 12.99,
+    "img_url": "https://example.com/images/hydromax-750ml.jpg",
+    "in_stock": true
+  },
+  {
+    "id": 3,
+    "brand": "EcoSip",
+    "type": "Juice Bottle",
+    "material": "Glass",
+    "capacity_ml": 1000,
+    "color": "Transparent",
+    "price_usd": 3.50,
+    "img_url": "https://example.com/images/ecosip-1000ml.jpg",
+    "in_stock": false
+  },
+  {
+    "id": 4,
+    "brand": "FreshFlow",
+    "type": "Soda Bottle",
+    "material": "Plastic",
+    "capacity_ml": 1500,
+    "color": "Green",
+    "price_usd": 2.10,
+    "img_url": "https://example.com/images/freshflow-1500ml.jpg",
+    "in_stock": true
+  },
+  {
+    "id": 5,
+    "brand": "ThermoKeep",
+    "type": "Thermos Bottle",
+    "material": "Steel",
+    "capacity_ml": 1000,
+    "color": "Black",
+    "price_usd": 18.75,
+    "img_url": "https://example.com/images/thermokeep-1000ml.jpg",
+    "in_stock": true
+  },
+  {
+    "id": 6,
+    "brand": "PureDrop",
+    "type": "Water Bottle",
+    "material": "Plastic",
+    "capacity_ml": 600,
+    "color": "Pink",
+    "price_usd": 1.75,
+    "img_url": "https://example.com/images/puredrop-600ml.jpg",
+    "in_stock": false
+  },
+  {
+    "id": 7,
+    "brand": "ChillMate",
+    "type": "Sports Bottle",
+    "material": "Aluminum",
+    "capacity_ml": 800,
+    "color": "Red",
+    "price_usd": 9.99,
+    "img_url": "https://example.com/images/chillmate-800ml.jpg",
+    "in_stock": true
+  },
+  {
+    "id": 8,
+    "brand": "NatureSip",
+    "type": "Water Bottle",
+    "material": "Bamboo",
+    "capacity_ml": 550,
+    "color": "Brown",
+    "price_usd": 14.20,
+    "img_url": "https://example.com/images/naturesip-550ml.jpg",
+    "in_stock": true
+  },
+  {
+    "id": 9,
+    "brand": "CrystalClear",
+    "type": "Juice Bottle",
+    "material": "Glass",
+    "capacity_ml": 1200,
+    "color": "Transparent",
+    "price_usd": 4.80,
+    "img_url": "https://example.com/images/crystalclear-1200ml.jpg",
+    "in_stock": false
+  },
+  {
+    "id": 10,
+    "brand": "UrbanHydrate",
+    "type": "Water Bottle",
+    "material": "Stainless Steel",
+    "capacity_ml": 700,
+    "color": "White",
+    "price_usd": 15.60,
+    "img_url": "https://example.com/images/urbanhydrate-700ml.jpg",
+    "in_stock": true
+  }
+]
