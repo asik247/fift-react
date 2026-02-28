@@ -1,24 +1,46 @@
 import React from 'react';
 
 const Bottol = ({ bottol }) => {
-    const { id, brand, type, color, price_usd, img_url, in_stock}  = bottol;
-    console.log(bottol);
+    const { id, brand, type, color, price_usd, img_url, in_stock } = bottol;
+
     return (
-        <div>
-            <div className="card bg-base-100 w-96 shadow-sm">
-                <figure>
-                    <img src={img_url} alt="" />
+        <div className="w-full">
+            <div className="card bg-base-100 w-full h-[420px] shadow-md">
+                
+                {/* Image Section */}
+                <figure className="h-[300px] overflow-hidden">
+                    <img 
+                        className="w-full h-full object-cover"
+                        src={img_url} 
+                        alt={brand}
+                    />
                 </figure>
-                <div className="card-body">
-                    <h2 className="card-title">
-                      {id}
-                        <div className="badge badge-secondary">NEW</div>
-                    </h2>
-                    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                    <div className="card-actions justify-end">
-                        <div className="badge badge-outline">Fashion</div>
-                        <div className="badge badge-outline">Products</div>
+
+                {/* Body Section */}
+                <div className="card-body p-4 flex flex-col justify-between">
+                    
+                    <div>
+                        <h2 className="card-title text-lg font-bold">
+                            {brand}
+                            <div className="badge badge-secondary ml-2">
+                                {in_stock ? "In Stock" : "Sold Out"}
+                            </div>
+                        </h2>
+
+                        <p className="text-sm text-gray-500">
+                            {type} • {color}
+                        </p>
+
+                        <p className="font-semibold mt-2">
+                            ${price_usd}
+                        </p>
                     </div>
+
+                    <div className="card-actions justify-end mt-4">
+                        <div className="badge badge-outline">{type}</div>
+                        <div className="badge badge-outline">{color}</div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -26,16 +48,3 @@ const Bottol = ({ bottol }) => {
 };
 
 export default Bottol;
-/**
- * {
-    "id": 10,
-    "brand": "UrbanHydrate",
-    "type": "Water Bottle",
-    "material": "Stainless Steel",
-    "capacity_ml": 700,
-    "color": "White",
-    "price_usd": 15.6,
-    "img_url": "https://ibb.co.com/bRvFJwWK",
-    "in_stock": true
-}
- */

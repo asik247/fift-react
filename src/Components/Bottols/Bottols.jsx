@@ -5,7 +5,7 @@ const Bottols = ({bottolsPromise}) => {
     const bottosDatas = use(bottolsPromise)
     console.log(bottosDatas);
     return (
-        <div>
+        <div className='grid md:grid-cols-3 gap-6 w-11/12 mx-auto mt-30'>
             {
                 bottosDatas.map(bottol=><Bottol bottol={bottol}></Bottol>)
             }
