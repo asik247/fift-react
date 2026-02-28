@@ -5,7 +5,9 @@ const Bottols = ({bottolsPromise}) => {
     console.log(bottosDatas);
     return (
         <div>
-            
+            {
+                bottosDatas.map(bottol=>console.log(bottol))
+            }
         </div>
     );
 };

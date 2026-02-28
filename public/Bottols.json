@@ -7,7 +7,7 @@
     "capacity_ml": 500,
     "color": "Blue",
     "price_usd": 1.25,
-    "img_url": "https://example.com/images/aquapure-500ml.jpg",
+    "img_url": "https://ibb.co.com/DHpw0KKk",
     "in_stock": true
   },
   {
@@ -18,7 +18,7 @@
     "capacity_ml": 750,
     "color": "Silver",
     "price_usd": 12.99,
-    "img_url": "https://example.com/images/hydromax-750ml.jpg",
+    "img_url": "https://ibb.co.com/4wQNtyVs",
     "in_stock": true
   },
   {
@@ -29,7 +29,7 @@
     "capacity_ml": 1000,
     "color": "Transparent",
     "price_usd": 3.50,
-    "img_url": "https://example.com/images/ecosip-1000ml.jpg",
+    "img_url": "https://ibb.co.com/mrMNg64T",
     "in_stock": false
   },
   {
@@ -40,7 +40,7 @@
     "capacity_ml": 1500,
     "color": "Green",
     "price_usd": 2.10,
-    "img_url": "https://example.com/images/freshflow-1500ml.jpg",
+    "img_url": "https://ibb.co.com/Y9zfn8C",
     "in_stock": true
   },
   {
@@ -51,7 +51,7 @@
     "capacity_ml": 1000,
     "color": "Black",
     "price_usd": 18.75,
-    "img_url": "https://example.com/images/thermokeep-1000ml.jpg",
+    "img_url": "https://ibb.co.com/S7Wmbtrg",
     "in_stock": true
   },
   {
@@ -62,7 +62,7 @@
     "capacity_ml": 600,
     "color": "Pink",
     "price_usd": 1.75,
-    "img_url": "https://example.com/images/puredrop-600ml.jpg",
+    "img_url": "https://ibb.co.com/tw1Dd8VW",
     "in_stock": false
   },
   {
@@ -73,7 +73,7 @@
     "capacity_ml": 800,
     "color": "Red",
     "price_usd": 9.99,
-    "img_url": "https://example.com/images/chillmate-800ml.jpg",
+    "img_url": "https://ibb.co.com/kPftB4D",
     "in_stock": true
   },
   {
@@ -84,7 +84,7 @@
     "capacity_ml": 550,
     "color": "Brown",
     "price_usd": 14.20,
-    "img_url": "https://example.com/images/naturesip-550ml.jpg",
+    "img_url": "https://ibb.co.com/d0ztTpgy",
     "in_stock": true
   },
   {
@@ -95,7 +95,7 @@
     "capacity_ml": 1200,
     "color": "Transparent",
     "price_usd": 4.80,
-    "img_url": "https://example.com/images/crystalclear-1200ml.jpg",
+    "img_url": "https://ibb.co.com/pjx8Sc6z",
     "in_stock": false
   },
   {
@@ -106,7 +106,7 @@
     "capacity_ml": 700,
     "color": "White",
     "price_usd": 15.60,
-    "img_url": "https://example.com/images/urbanhydrate-700ml.jpg",
+    "img_url": "https://ibb.co.com/bRvFJwWK",
     "in_stock": true
   }
 ]
