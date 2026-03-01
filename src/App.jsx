@@ -4,7 +4,7 @@ import Navbar from './Components/Navbar/Navbar';
 // Bottoles promise fetch code start here;
 const bottolsPromise = fetch("./Bottols.json")
 .then(res=>res.json())
-console.log(bottolsPromise);
+// console.log(bottolsPromise);
 // Bottoles promise fetch code end here;
 
 const App = () => {

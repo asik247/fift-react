@@ -5,20 +5,19 @@ const Bottols = ({bottolsPromise}) => {
     // Buy Now btn relative state and code start here;
     const [purces,setParces] = useState([]);
     const handlePurces = (bottol) =>{
-        console.log("purcesh btn clicked",bottol);
+        // console.log("purcesh btn clicked",bottol);
         const newData = [...purces,bottol]
         setParces(newData)
     }
     // Buy Now btn relative state and code end here;
     const bottosDatas = use(bottolsPromise)
-    console.log(bottosDatas);
+    // console.log(bottosDatas);
     return (
         <div className='grid md:grid-cols-3 gap-6 w-11/12 mx-auto mt-30'>
-           <h1>Iam bottols</h1>
-           {
-            console.log(purces)
+           <h1>Iam bottols {purces.length}</h1>
+           <h1>Iam bottols {purces.length}</h1>
+           
         
-           }
             {
                 bottosDatas.map(bottol=><Bottol key={bottol.id} bottol={bottol} handlePurces={handlePurces}></Bottol>)
             }
