@@ -6,19 +6,19 @@ const Bottol = ({ bottol }) => {
     return (
         <div className="w-full">
             <div className="card bg-base-100 w-full h-[420px] shadow-md">
-                
+
                 {/* Image Section */}
                 <figure className="h-[300px] overflow-hidden">
-                    <img 
+                    <img
                         className="w-full h-full object-cover"
-                        src={img_url} 
+                        src={img_url}
                         alt={brand}
                     />
                 </figure>
 
                 {/* Body Section */}
                 <div className="card-body p-4 flex flex-col justify-between">
-                    
+
                     <div>
                         <h2 className="card-title text-lg font-bold">
                             {brand}
@@ -37,8 +37,9 @@ const Bottol = ({ bottol }) => {
                     </div>
 
                     <div className="card-actions justify-end mt-4">
-                        <div className="badge badge-outline">{type}</div>
-                        <div className="badge badge-outline">{color}</div>
+                        {/* <div className="badge badge-outline">{type}</div>
+                        <div className="badge badge-outline">{color}</div> */}
+                        <button className='btn'>Buy Now</button>
                     </div>
 
                 </div>
