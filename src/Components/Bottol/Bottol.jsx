@@ -39,7 +39,7 @@ const Bottol = ({ bottol,handlePurces }) => {
                     <div className="card-actions justify-end mt-4">
                         {/* <div className="badge badge-outline">{type}</div>
                         <div className="badge badge-outline">{color}</div> */}
-                        <button onClick={handlePurces} className='btn'>Buy Now</button>
+                        <button onClick={()=>handlePurces(bottol)} className='btn'>Buy Now</button>
                     </div>
 
                 </div>
