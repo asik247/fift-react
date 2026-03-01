@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Bottol = ({ bottol }) => {
+const Bottol = ({ bottol,handlePurces }) => {
     const { id, brand, type, color, price_usd, img_url, in_stock } = bottol;
 
     return (
@@ -39,7 +39,7 @@ const Bottol = ({ bottol }) => {
                     <div className="card-actions justify-end mt-4">
                         {/* <div className="badge badge-outline">{type}</div>
                         <div className="badge badge-outline">{color}</div> */}
-                        <button className='btn'>Buy Now</button>
+                        <button onClick={handlePurces} className='btn'>Buy Now</button>
                     </div>
 
                 </div>
