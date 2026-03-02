@@ -19,6 +19,7 @@ const Bottols = ({ bottolsPromise }) => {
     // UseEffect use and get data log stroge;
     useEffect(() => {
         const stroedCartId = getCart();
+        // console.log(stroedCartId,bottosDatas)
         const matchIdCart = [];
         for (const id of stroedCartId) {
             // console.log(id);
@@ -31,7 +32,6 @@ const Bottols = ({ bottolsPromise }) => {
         setParces(matchIdCart)
         // all bottols find and single bottol;
 
-        // console.log(stroedCartId,bottosDatas)
     }, [bottosDatas])
 
     return (
