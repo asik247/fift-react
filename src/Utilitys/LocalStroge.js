@@ -12,7 +12,7 @@ const getCart = () =>{
 // save stringfiy;
 const saveCart = (cart) =>{
     const addCartStringfiy = JSON.stringify(cart);
-    localStorage.setItem(addCartStringfiy);
+    localStorage.setItem("cart",addCartStringfiy);
 }
 
 

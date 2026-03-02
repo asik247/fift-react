@@ -1,25 +1,45 @@
-import React, { use, useState } from 'react';
+import React, { use, useEffect, useState } from 'react';
 import Bottol from '../Bottol/Bottol';
-import { addCart } from '../../Utilitys/LocalStroge';
+import { addCart, getCart } from '../../Utilitys/LocalStroge';
 
-const Bottols = ({bottolsPromise}) => {
+const Bottols = ({ bottolsPromise }) => {
     // Buy Now btn relative state and code start here;
-    const [purces,setParces] = useState([]);
-    const handlePurces = (bottol) =>{
+    const [purces, setParces] = useState([]);
+    const handlePurces = (bottol) => {
         // console.log("purcesh btn clicked",bottol);
-        const newData = [...purces,bottol]
+        const newData = [...purces, bottol]
         setParces(newData)
         addCart(bottol.id)
+        // console.log(bottol);
     }
     // Buy Now btn relative state and code end here;
     const bottosDatas = use(bottolsPromise)
     // console.log(bottosDatas);
+
+    // UseEffect use and get data log stroge;
+    useEffect(() => {
+        const stroedCartId = getCart();
+        const matchIdCart = [];
+        for (const id of stroedCartId) {
+            // console.log(id);
+            const singleCart = bottosDatas.find(bottle => bottle.id === id);
+            if (singleCart) {
+                matchIdCart.push(singleCart);
+            }
+        }
+        // console.log('stored cart', matchIdCart);
+        setParces(matchIdCart)
+        // all bottols find and single bottol;
+
+        // console.log(stroedCartId,bottosDatas)
+    }, [bottosDatas])
+
     return (
         <div className='grid md:grid-cols-3 gap-6 w-11/12 mx-auto mt-30'>
-           <h1>Iam bottols {purces.length}</h1>
-           
+            <h1>Iam bottols {purces.length}</h1>
+
             {
-                bottosDatas.map(bottol=><Bottol key={bottol.id} bottol={bottol} handlePurces={handlePurces}></Bottol>)
+                bottosDatas.map(bottol => <Bottol key={bottol.id} bottol={bottol} handlePurces={handlePurces}></Bottol>)
             }
         </div>
     );
