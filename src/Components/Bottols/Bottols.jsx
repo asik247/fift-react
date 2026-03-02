@@ -9,6 +9,7 @@ const Bottols = ({ bottolsPromise }) => {
         // console.log("purcesh btn clicked",bottol);
         const newData = [...purces, bottol]
         setParces(newData)
+        // bottol id lg stroge a sent;
         addCart(bottol.id)
         // console.log(bottol);
     }
@@ -35,12 +36,15 @@ const Bottols = ({ bottolsPromise }) => {
     }, [bottosDatas])
 
     return (
-        <div className='grid md:grid-cols-3 gap-6 w-11/12 mx-auto mt-30'>
-            <h1>Iam bottols {purces.length}</h1>
+        <div >
+            <h1 className='font-bold text-2xl text-center mt-5'>Add Cart: {purces.length}</h1>
+            {/* <h1>Iam bottols {purces.length}</h1> */}
+            <div className='grid md:grid-cols-3 gap-6 w-11/12 mx-auto mt-30'>
 
-            {
-                bottosDatas.map(bottol => <Bottol key={bottol.id} bottol={bottol} handlePurces={handlePurces}></Bottol>)
-            }
+                {
+                    bottosDatas.map(bottol => <Bottol key={bottol.id} bottol={bottol} handlePurces={handlePurces}></Bottol>)
+                }
+            </div>
         </div>
     );
 };
